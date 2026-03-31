@@ -6,73 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/icon.avif">
     <title>Summer Beats Festival</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
+    <header class="topo">
+        <div class="container-cabecalho">
             <!-- nome do evento e seu slogan -->
-            <h1>Summer Beats Festival</h1>
-            <h2>Venha viver momentos inesquecíveis</h2>
+            <div class="logo">
+                <h1 style="color: blue;">Summer Beats Festival </h1>
+                <h2>Venha viver momentos inesquecíveis <i class="fa-solid fa-beer-mug-empty"></i></h2>
+            </div>
             <!-- barra de navegação com os links -->
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li> <a href="./pagina2.html">Programação</a></li>
-                    <li><a href="./pagina3.html">Galeria</a></li>
+            <nav class="navegacao container">
+                <ul class="menu">
+                    <li><a href="./index.html"> <i class="fa-solid fa-house"></i>Home</a></li>
+                    <li> <a href="./pagina2.html"><i class="fa-solid fa-clock"></i>Programação</a></li>
+                    <li><a href="./pagina3.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
                 </ul>
+
+
             </nav>
         </div>
-
     </header>
 
     <main>
         <!-- seção 1 com os parágrafos falando sobre o evento -->
-        <section>
-            <div>
-                <p> <strong>O Summer Beats</strong> é um festival de música criado especialmente para o público jovem
+        <section class="apresentacao container">
+            <div class="secao">
+                <h1>Bem vindo ao Summer beats</h1>
+                <p> <strong>O Summer Beats</strong> é um festival de música criado especialmente para o público
+                    jovem
                     universitário,
                     oferecendo uma experiência completa de entretenimento, integração e diversão. O evento reúne
-                    atrações musicais, DJs e performances ao vivo em um ambiente temático de verão, proporcionando uma
-                    atmosfera vibrante, organizada e segura.</p>
-                <p>Além da música, <strong>o Summer Beats</strong> promove momentos de conexão entre estudantes de
+                    atrações musicais, DJs e performances ao vivo em um ambiente temático de verão, proporcionando
+                    uma
+                    atmosfera vibrante, organizada e segura.
+                    Além da música, <strong>o Summer Beats</strong> promove momentos de conexão entre estudantes de
                     diferentes
-                    instituições, tornando-se não apenas uma festa, mas um verdadeiro ponto de encontro da comunidade
+                    instituições, tornando-se não apenas uma festa, mas um verdadeiro ponto de encontro da
+                    comunidade
                     universitária.</p>
 
-            </div>
 
+            </div>
 
         </section>
 
         <!-- seção 2 contendo a lista de diferenciais  sobre o evento -->
-        <section>
-            <div>
+        <section class="diferencial container">
+            <div class="titulo">
                 <h2>Diferenciais sobre o nosso evento</h2>
-                <ul>
-                    <li>2 horas de Open bar</li>
-                    <li>Distribuição de copos personalizados do evento</li>
-                    <li>Fótografos na festa</li>
-                    <li>Festas Temáticas</li>
-                </ul>
-
-
             </div>
 
+            <div class="grid">
+                <div class="item">
+                 <i class="fa-regular fa-clock"></i>   2 horas de Open bar <i class="fa-solid fa-wine-glass"></i>
+                </div>
 
+                <div class="item">
+
+                 <i class="fa-brands fa-angellist"></i>   Distribuição de copos personalizados do evento <i class="fa-solid fa-mug-saucer"></i>
+
+                </div>
+
+                <div class="item">
+                    <i class="fa-solid fa-camera"></i> Fótografos na festa <i class="fa-solid fa-photo-film"></i>
+
+                </div>
+
+                <div class="item">
+                   <i class="fa-solid fa-mask"></i> Festas Temáticas <i class="fa-solid fa-broom"></i>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- rodapé do nosso site -->
-    <footer>
-        <div>
+    <footer class="rodape container">
+        <div class="contato">
             <h3>Nosso contato</h3>
-            <ul>
-                <li>acessoriasummerbeats@gmail.com</li>
-                <li>(27) 9875023132</li>
-                <li>2026</li>
-            </ul>
+            acessoriasummerbeats@gmail.com
+            (27) 9875023132
+            2026
         </div>
     </footer>
 </body>
