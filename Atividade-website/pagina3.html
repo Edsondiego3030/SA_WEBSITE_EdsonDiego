@@ -5,52 +5,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header>
-        <div>
-
-            <h1>Galeria Do Summer Beats Festival</h1>
-
-            <nav>
-                <ul>
-                    <li><a href="./pagina3.html">Galeria</a></li>
-                    <li> <a href="./pagina2.html">Programação</a></li>
-                    <li><a href="./index.html">Home</a></li>
+    <header class="topo">
+        <div class="container-cabecalho">
+            <!-- nome do evento e seu slogan -->
+            <div class="logo">
+                <h1 style="color: rgb(255, 255, 255);">Summer Beats Festival </h1>
+                <h2>Venha viver momentos inesquecíveis <i class="fa-solid fa-beer-mug-empty"></i></h2>
+            </div>
+            <!-- barra de navegação com os links -->
+            <nav class="navegacao container">
+                <ul class="menu">
+                    <li><a href="./index.html"> <i class="fa-solid fa-house"></i>Home</a></li>
+                    <li> <a href="./pagina2.html"><i class="fa-solid fa-clock"></i>Programação</a></li>
+                    <li><a href="./pagina3.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
+                    <li><a href="./contato.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
                 </ul>
+
+
             </nav>
         </div>
     </header>
 
     <main>
-        <div>
-            <article>
 
-                <figure>
+        <article>
+
+            <div class="foto-grid">
+                <figure class="foto">
                     <img src="./img/evento.webp" alt="Pessoas curtindo o evento" height="200px">
                     <figcaption>Imagens Do publico curtindo o ultimo show que teve de rock</figcaption>
                 </figure>
 
-                <figure>
+                <figure class="foto">
                     <img src="./img/Universitárias.webp" alt="Universitárias" width="400px" height="200px">
                     <figcaption>Uma foto tirada das nossas Universitárias no show</figcaption>
 
                 </figure>
 
-                <figure>
+                <figure class="foto">
                     <img src="./img/Fantasia.jpg" alt="Alunos fantasiados com o tema" width="400px" height="200px">
                     <figcaption>Fotos dos Alunos Fantasiados Quando o Evento teve o Tema Sobre fantasia</figcaption>
                 </figure>
+            </div>
+        </article>
 
-            </article>
 
 
-        </div>
 
     </main>
 
-    <footer></footer>
+    <footer class="rodape container">
+        <div class="contato">
+            <h3>Nosso contato</h3>
+            acessoriasummerbeats@gmail.com
+            (27) 9875023132
+            2026
+        </div>
+    </footer>
+
+
 </body>
 
 </html>

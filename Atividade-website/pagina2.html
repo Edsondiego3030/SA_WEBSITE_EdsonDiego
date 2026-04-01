@@ -5,84 +5,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programação</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="/Atividade-website/css/style.css">
+
+    <style>
+        .programacao {
+            padding: 40px;
+
+        }
+
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        .tabela-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0px 0px;
+            border: 3px solid black;
+
+        }
+
+        .tabela-grid div {
+            border: 1px solid black;
+            font-size: 27px;
+            padding: 10px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+        }
+
+        .cabecalho-tabela {
+            font-size: 70px;
+            display: flex;
+            justify-content: center;
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
     <!-- a mesma header com os links -->
-    <header>
-        <div>
-            <h1>Programação sobre o nosso evento</h1>
-            <nav>
-                <ul>
-                    <li><a href="pagina2.html">Programação</a></li>
-                    <li><a href="index.html">Nossa pagina principal</a></li>
-                    <li><a href="pagina3.html">Galeria</a></li>
-                </ul>
-            </nav>
+    <header class="topo">
+        <div class="container-cabecalho">
+            <!-- nome do evento e seu slogan -->
+            <div class="logo">
+                <h1 style="color: rgb(255, 255, 255);">Summer Beats Festival </h1>
+                <h2>Venha viver momentos inesquecíveis <i class="fa-solid fa-beer-mug-empty"></i></h2>
+            </div>
+            <!-- barra de navegação com os links -->
+            <nav class="navegacao">
+                <ul class="menu">
+                    <li><a href="./index.html"> <i class="fa-solid fa-house"></i>Home</a></li>
+                    <li> <a href="./pagina2.html"><i class="fa-solid fa-clock"></i>Programação</a></li>
+                    <li><a href="./pagina3.html"><i class="fa-solid fa-image"></i>Galeria</a></li>
+                    <li><a href="./pagina3.html"><i class="fa-solid fa-phone"></i>Contato</a></li>
 
+                </ul>
+
+
+            </nav>
         </div>
     </header>
 
     <main>
-        <div>
-            <h2>Nossa tábela sobre o evento</h2>
 
-            <!-- criando uma tabela -->
-            <table border="5">
-                <!-- cabeçalho da tabela -->
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Descrição</th>
-                        <th>Data</th>
-                        <th>Valor</th>
-
-                    </tr>
-                </thead>
-                <!-- corpo da tabela -->
-                <tbody>
-                    <!-- cria uma linha -->
+        <section class="programacao">
+            <div class="container">
 
 
-                    <tr>
-                        <!-- cria uma coluna -->
-                        <td>Ingresso Meia Sólidaria</td>
-                        <td>Precisa de entregar min 1kg de alimento não parecivel</td>
-                        <td>05/03/2026</td>
-                        <td>R$60,00</td>
 
-                    </tr>
-                    <tr>
-                        <td>Ingresso Meia estudante </td>
-                        <td>Precisa mostrar a carteira de estudante para pagar meia</td>
-                        <td>05/03/2026</td>
-                        <td>R$40,00</td>
+                <h1>Nossa Programação com os ingressos</h1>
+                <div class="tabela-grid">
 
-                    </tr>
-
-                    <tr>
-                        <td>Ingresso Inteiro</td>
-                        <td>Para o público geral e que não possui descontos aplicados</td>
-                        <td>05/03/2026</td>
-                        <td>R$80,00</td>
+                    <div class="cabecalho-tabela">Item</div>
+                    <div class="cabecalho-tabela">Descrição</div>
+                    <div class="cabecalho-tabela">Data</div>
+                    <div class="cabecalho-tabela">Valor</div>
 
 
-                    </tr>
-                </tbody>
 
-                <tfoot>
-                    <tr>
-                        <!-- mesclar colunas -->
-                        <td colspan="5"> Todos os direitos estão Reservados &copy;</td>
-                    </tr>
-                </tfoot>
-            </table>
+                    <div>Ingresso Meia Solidária</div>
+                    <div>Precisa doar 1kg de alimento</div>
+                    <div>05/03/2026</div>
+                    <div>R$60,00</div>
+
+                    <div>Meia Esudante</div>
+                    <div>Apresentar carteirinha</div>
+                    <div>05/03/2026</div>
+                    <div>R$40,00</div>
 
 
-        </div>
+                    <div>Inteiro</div>
+                    <div>Público geral</div>
+                    <div>05/03/2026</div>
+                    <div>R$80,00</div>
+
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+
+
     </main>
 
-    <footer></footer>
+
+    <!-- rodapé do nosso site -->
+    <footer class="rodape ">
+        <div class="contato">
+            <h3>Nosso contato</h3>
+            acessoriasummerbeats@gmail.com
+            (27) 9875023132
+            2026
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
