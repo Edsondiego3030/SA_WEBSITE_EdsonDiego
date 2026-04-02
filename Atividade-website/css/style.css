@@ -75,10 +75,10 @@ a{
     padding: 20px;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+.flex{
+   display: flex;
+   gap: 8px;
+
 }
 
 .titulo{
@@ -87,16 +87,17 @@ a{
 }
 .item{
     margin-top: 35px;
-    background-color: white;
+    background-color: rgb(253, 206, 120);
     box-shadow: 10px 0 20px black;
     padding: 30px;
-    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    width: 700px;
-    gap: 30px;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+    border-radius: 10px;
 }
 
 .rodape{
